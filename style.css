@@ -2,11 +2,32 @@
     border: 1px solid black;
     width: 100%;
     display: grid;
-    
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 40px 180px 200px;
+    gap: 5px 5px;
+    grid-template-areas: 
+    "b1 b1 b1"
+    "b2 b2 b3"
+    "b4 b5 b3";
 }
 
 .box{
     border: 1px solid blue;
     background-color: tomato;
-    height: 150px;
+}
+
+#box-1{
+    grid-area: b1;
+}
+#box-2{
+    grid-area: b2;
+}
+#box-3{
+    grid-area: b3;
+}
+#box-4{
+    grid-area: b4;
+}
+#box-5{
+    grid-area: b5;
 }
